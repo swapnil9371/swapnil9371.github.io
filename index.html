@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Beautiful Bootstrap Form</title>
+  <!-- Add Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS for the form */
+    .container {
+      max-width: 600px;
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #555;
+    }
+
+    .form-check-input {
+      margin-right: 5px;
+    }
+
+    .btn {
+      margin-right: 10px;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+
+    .btn-secondary {
+      background-color: #6c757d;
+      border-color: #6c757d;
+    }
+
+    .btn-secondary:hover {
+      background-color: #5a6268;
+      border-color: #5a6268;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <form>
+      <div class="form-group">
+        <label for="textbox">Textbox:</label>
+        <input type="text" class="form-control" id="textbox" name="textbox" required>
+      </div>
+
+      <div class="form-group">
+        <label for="textarea">Textarea:</label>
+        <textarea class="form-control" id="textarea" name="textarea" rows="4" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Radio Button:</label>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="radio1" name="radio" value="option1" required>
+          <label class="form-check-label" for="radio1">Option 1</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="radio2" name="radio" value="option2" required>
+          <label class="form-check-label" for="radio2">Option 2</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Checkbox:</label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="checkbox1" name="checkbox1" required>
+          <label class="form-check-label" for="checkbox1">Checkbox 1</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="checkbox2" name="checkbox2" required>
+          <label class="form-check-label" for="checkbox2">Checkbox 2</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="reset" class="btn btn-secondary">Reset</button>
+    </form>
+  </div>
+
+  <!-- Add Bootstrap JS and jQuery (optional, for some features) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
